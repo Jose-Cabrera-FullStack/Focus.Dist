@@ -270,7 +270,9 @@
 .course__inclusive__diploma {
   width: 276px;
   height: 230px;
-  margin: 50px 0 0px 15%; }
+  margin: 50px 0 0px 0;
+  position: absolute;
+  right: 240px; }
 
 .course__inclusive__inside h1 {
   font-family: 'Mont-Bold';
@@ -322,15 +324,110 @@
   margin: 0 0 50px 0px; }
 
 .course__module li {
-  list-style: none;
+  list-style: none; }
+
+.course__module__element {
   width: 659px;
   margin: 10px 0 0 0;
   height: 55px;
-  background: #F2F2F2; }
+  background: #F2F2F2;
+  cursor: pointer;
+  user-select: none; }
+
+.course__module__element--teacher {
+  width: 506px;
+  height: 47px; }
+
+.course__module__element__title {
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000; }
+
+.course__module__element__title--help__center {
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 148.3%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding: 20px 0px 0px 30px; }
+
+.course__module__element__title--teacher {
+  padding: 15px 0px 0px 30px; }
+
+.course__module__element__inside {
+  width: 659px;
+  background: #E0E0E0;
+  margin: 3px 0 0 0; }
+
+.course__module__element__inside--teacher {
+  width: auto; }
+
+.course__module__element__inside--help__center {
+  margin: 3px 140px 30px 0;
+  padding: 20px 0px 0px 20px; }
+
+.course__module__element__inside p {
+  font-family: Judson;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 143.3%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 2px 0 20px 0;
+  padding: 20px 80px 20px 30px;
+  user-select: none; }
+
+.course__module__element__inside__icon {
+  margin: 0px 20px 0 35px;
+  position: relative;
+  bottom: 7px; }
+
+.course__module__element__inside__right {
+  margin: 10px 0 16px 0; }
+
+.course__module__element__inside__right h5 {
+  font-family: 'Mont-Semi-Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 10px 0 -5px 0; }
+
+.course__module__element__inside__right i {
+  margin: 0px 0px 0px 0px;
+  font-family: Mont-Light;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: #828282; }
+
+.course__module__sub__title {
+  font-family: 'Mont-Semi-Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  position: relative;
+  bottom: 13px;
+  left: 60px;
+  width: 330px; }
 
 .course__module li strong {
   font-family: "Mont-Bold";
-  margin: 29px;
+  margin: 5px;
   font-size: 12px; }
 
 .course__module__time {
@@ -345,11 +442,26 @@
   width: 15px;
   filter: contrast(0.2); }
 
+.course__module__play {
+  margin: 0px -15px 0 27px;
+  position: relative;
+  width: 23px;
+  top: 15px; }
+
 .course__module__arrow {
   padding: 0px 0 0 0;
   position: relative;
-  left: 350px;
+  left: 90%;
   top: 15px; }
+
+.course__module__arrow--buyed {
+  left: 85%; }
+
+.course__module__arrow--help__center {
+  padding: 0px 0 0 0;
+  position: relative;
+  left: 90%;
+  top: -35px; }
 
 .course__recomendation {
   background: #03002B;
@@ -384,12 +496,31 @@
 
 .course__recomendation__inside__text {
   width: 360px;
-  border-bottom: 1px solid;
   padding: 0px 0 40px 0px; }
 
 .course__recomendation__arrows {
   margin: 20px 0px 0px 43%;
   padding: 10px 0 32px 0; }
+
+.course__recomendation__arrows__left {
+  background-image: url(img/arrow-left.svg);
+  width: 24px;
+  height: 24px;
+  cursor: pointer; }
+
+.course__recomendation__arrows__left:hover {
+  background-image: url(img/arrow-left-hover.svg); }
+
+.course__recomendation__arrows__right {
+  background-image: url(img/arrow-right.svg);
+  width: 24px;
+  height: 24px;
+  cursor: pointer; }
+
+.course__recomendation__arrows__right:hover {
+  background-image: url(img/arrow-right-hover.svg);
+  width: 23px;
+  height: 23px; }
 
 .course__recomendation__arrows__numb {
   margin: 5px 35px 0 35px;
@@ -468,6 +599,16 @@
   line-height: 130.3%;
   color: #000000; }
 
+@media screen and (max-width: 1300px) {
+  .course__inclusive__diploma {
+    right: 130px; }
+  .discovery__box__info {
+    display: none; } }
+
+@media screen and (max-width: 1130px) {
+  .course__inclusive__diploma {
+    right: 70px; } }
+
 @media screen and (max-width: 1024px) {
   .course {
     margin: 40px 0px 0px 10%; }
@@ -496,7 +637,8 @@
     font-size: 19px;
     line-height: 128.3%;
     color: #000000;
-    width: 80vw; }
+    width: 80vw;
+    border-bottom: 1px solid; }
   .course__module {
     margin: 100px 0 0 10%; }
   .course__for__me {
@@ -523,8 +665,6 @@
     width: auto; }
   .course__module li {
     width: 80vw; }
-  .course__module__arrow {
-    left: 30vw; }
   .course__module li strong {
     font-size: 12px; }
   .course__logo__mobile {
@@ -548,15 +688,14 @@
   .course__teach p {
     margin: 0px 0px 10px 0px; }
   .course__teach strong {
-    margin: 10px 20px 10px 0px; } }
-
-@media screen and (max-width: 600px) {
-  .course__module__arrow {
-    left: 14vw; } }
-
-@media screen and (max-width: 400px) {
-  .course__module__arrow {
-    left: 4vw; } }
+    margin: 10px 20px 10px 0px; }
+  .course__module__element {
+    width: auto; }
+  .course__module__element__inside {
+    width: auto; }
+  .course__module__element__inside--help__center {
+    margin: 3px 0px 30px 0;
+    padding: 20px 0px 0px 20px; } }
 /* <-------DISCOVERY-------> */
 .discovery__container {
   margin: 0 200px 0 200px;
@@ -576,12 +715,9 @@
 
 .discovery__course {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 17px 24px;
-  grid-template-areas: '. . .'; }
-
-.discovery__diploma {
-  display: none; }
+  grid-template-areas: '. .'; }
 
 .discovery__box {
   width: 350px; }
@@ -611,8 +747,16 @@
   background-image: linear-gradient(to top, #dad9d99e, #f2f2f2);
   margin: -4px 0 0 0; }
 
+.discovery__box__info__course {
+  background-image: linear-gradient(to top, #dad9d99e, #f2f2f2);
+  margin: -4px 0 0 0; }
+
+.discovery__box__info--my__course {
+  background-image: linear-gradient(to top, #dad9d99e, #f2f2f2);
+  margin: -4px 0 0 0; }
+
 .discovery__box__info__padding {
-  padding: 10px 0px 0px 21px; }
+  padding: 10px 30px 0px 21px; }
 
 .discovery__box__info__title {
   font-style: normal;
@@ -768,6 +912,10 @@
 
 /* <-------ANIMATION-------> */
 /* <-------MEDIA-------> */
+@media screen and (max-width: 1315px) {
+  .discovery__diploma {
+    display: none; } }
+
 @media screen and (max-width: 1024px) {
   .discovery__course {
     display: block; }
@@ -779,7 +927,9 @@
   .display__course__screen__desktop {
     display: none; }
   .display__course__screen__mobile {
-    display: block; } }
+    display: block; }
+  .discovery__box {
+    margin: 10px 0 0 0; } }
 
 @media screen and (max-width: 400px) {
   .discovery__course {
@@ -789,6 +939,193 @@
     transition: all 0.2s ease-in-out; } }
 
 /* <-------MEDIA-------> */
+.shopping__car {
+  margin: 0px 200px 0px 200px;
+  transition: all 0.2s ease-in-out; }
+
+.shopping__car h1 {
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 113.3%;
+  color: #0D0056; }
+
+.shopping__car__box__inside {
+  margin: 40px 51px 0px 40px; }
+
+.hero__view__promo__price--shopping__car {
+  width: 120px; }
+
+.hero__view__promo__price__before--shopping__car {
+  width: 70px; }
+
+.shopping__car__box {
+  width: 370px;
+  height: 275px;
+  background: #F2F2F2;
+  position: relative;
+  left: 70px; }
+
+.shopping__car__box__inside__text {
+  font-family: 'Mont-Light';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135.3%;
+  text-align: left;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 0px 90px 10px 0; }
+
+.shopping__car__box__inside__text--red {
+  color: #FF3F31; }
+
+.shopping__car__box__inside__promo--red {
+  color: #FF3F31;
+  font-style: normal;
+  font-family: Mont-Bold;
+  font-size: 15px; }
+
+.shopping__car__box__inside__discounts {
+  color: #B38A58;
+  font-style: normal;
+  font-family: Mont-Bold; }
+
+.shopping__car__box__inside__line {
+  border: 1px solid #000000; }
+
+.shopping__car__box__inside strong {
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135.3%;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: #000000; }
+
+.shopping__car__box__inside strong {
+  margin: 0; }
+
+.shopping__car__box__inside__promo {
+  position: relative;
+  top: 20px;
+  left: 10px; }
+
+.shopping__car__line {
+  width: 37vw;
+  border: 1px solid #BDBDBD;
+  margin: 30px 0px 30px 40px; }
+
+.shopping__car__box__inside__total {
+  width: 294px;
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 135.3%;
+  letter-spacing: -0.02em;
+  position: relative;
+  color: #03002B;
+  bottom: 20px; }
+
+.shopping__car__box__inside__total--price {
+  position: relative;
+  left: 70px; }
+
+.shopping__car--position {
+  position: relative;
+  left: 50px;
+  top: -10px; }
+
+.hero__view__promo__title--shopping__car {
+  margin: 25px 0 0 0; }
+
+.hero__view__promo__teacher--shopping {
+  font-family: 'Mont-Light';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135.3%;
+  letter-spacing: -0.03em;
+  color: #4F4F4F;
+  margin: 0; }
+
+.shopping__car__box__inside__button {
+  position: relative;
+  top: -15px;
+  left: 40px; }
+
+.hero__view__promo__price__delete--shopping__car {
+  position: absolute;
+  left: 47vw; }
+
+.hero__view__promo__img--shopping__car {
+  width: 81px;
+  height: 81px;
+  margin: 0px 0 20px 0; }
+
+.hero__view__promo__title--shopping__car {
+  margin: 0 0 0 10px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 135.3%;
+  letter-spacing: -0.02em;
+  color: #03002B;
+  font-family: 'Mont-Bold'; }
+
+.hero__view__promo__teacher--shopping__car {
+  margin: 0 0 0 10px;
+  font-family: 'Mont-Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135.3%;
+  letter-spacing: -0.02em;
+  color: #4F4F4F; }
+
+@media screen and (max-width: 1325px) {
+  .shopping-none {
+    display: none; }
+  .shopping__car {
+    margin: 0px 150px 0px 150px; } }
+
+@media screen and (max-width: 1024px) {
+  .shopping__car {
+    margin: 0px 5% 0px 5%; }
+  .shopping__car__box {
+    width: auto;
+    height: auto;
+    position: revert; }
+  .hero__view__promo__price__delete--shopping__car {
+    position: relative;
+    margin: 0;
+    left: 0; }
+  .hero__view__promo__price__delete {
+    margin: 0; }
+  .shopping__car__line {
+    width: 85vw;
+    margin: 30px 0px 30px 0px; }
+  .shopping__car__box__inside {
+    margin: 50px 0 0 0;
+    padding: 13px 25% 0 15%; }
+  .shopping__car__box__inside__total {
+    margin: 10px 0 10px 0;
+    bottom: 0;
+    width: auto; }
+  .shopping__car__box__inside__total {
+    font-family: 'Mont-Light'; }
+  .shopping__car__box__inside__total--price {
+    font-family: 'Mont-Bold';
+    left: 20%; }
+  .btn__secundary--buy {
+    margin: 30px 0px 24px 0px; }
+  .shopping__car__box__inside__text {
+    margin: 0px 15% 10px 0; }
+  .shopping__car__box__inside__mobile {
+    margin: 20px 0 10px 0; } }
 .utils__hero {
   height: 252px;
   background-image: linear-gradient(180deg, rgba(3, 0, 43, 0) 0.52%, #03002bd9 113.6%), url(img/hero-course.png);
@@ -890,6 +1227,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
+  width: 330px;
   margin: 0 20px 0 0px; }
 
 /* <-------MEDIA-------> */
@@ -904,7 +1242,9 @@
   .how__we__tech__container {
     gap: 1px 40px; }
   .how__we__tech {
-    margin: 0px 0px 0 10%; } }
+    margin: 0px 0px 0 10%; }
+  .how__we__tech__info__text {
+    width: auto; } }
 
 @media screen and (max-width: 917px) {
   .how__we__tech__container {
@@ -1143,7 +1483,7 @@
   margin: 0px 0 -10px 0; }
 
 .about__us__focus__phrase {
-  margin: 50px 200px 100px 200px; }
+  margin: 80px 200px 150px 100px; }
 
 .about__us__focus__phrase__title {
   font-family: 'Mont-Bold';
@@ -1156,19 +1496,24 @@
   color: #03002B; }
 
 .about__us__focus__phrase__inside {
-  margin: 0 0 0 17vw; }
+  position: relative;
+  left: 50%;
+  transform: translate(-45%, -10%); }
 
 .about__us__focus__phrase__img {
-  margin: 0 0 0 300px; }
+  position: relative;
+  left: 50%;
+  transform: translate(-45%, -10%); }
 
 .about__us__focus__phrase__sub {
-  margin: 30px 0 0px 240px;
   font-family: 'Mont-Bold';
   font-size: 20px;
-  color: #03002B; }
+  color: #03002B;
+  position: relative;
+  text-align: center;
+  transform: translate(0%, 0%); }
 
 .about__us__focus__phrase__author {
-  margin: 0px 0px 0px 235px;
   font-family: 'Mont-Regular';
   font-size: 16px;
   line-height: 113.3%;
@@ -1180,6 +1525,17 @@
 .about__us__focus__map__inside__data__geo__img {
   width: 400px;
   height: 483px; }
+
+.slide {
+  width: 84%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . . . . . . . . . . . ."; }
+
+.slide--course {
+  width: 98%; }
 
 /* <-------ANIMATION-------> */
 .about__us__arrow:hover {
@@ -1197,13 +1553,14 @@
   .about__us__focus__tweets {
     grid-template-columns: 1fr 1fr; }
   .about__us__focus__tweets__box {
-    margin: 10px 0 36px 0px; }
+    margin: 10px 0 36px 0px;
+    position: relative;
+    left: 50%;
+    transform: translate(-45%, -10%); }
   .about__us__focus__phrase__inside {
     margin: 0 0 0 0vw; }
-  .about__us__focus__phrase__img {
-    margin: 0 0 0 20%; }
   .about__us__focus__phrase {
-    margin: 50px 100px 100px 100px; } }
+    margin: 50px 100px 100px 50px; } }
 
 @media screen and (max-width: 1024px) {
   .none-second {
@@ -1248,14 +1605,12 @@
     grid-template-columns: 1fr 1fr; }
   .about__us__focus__phrase__title {
     width: auto; }
-  .about__us__focus__phrase__sub {
-    margin: 30px 0 0px 35%; }
-  .about__us__focus__phrase__author {
-    margin: 30px 0 0px 34%; } }
+  .slide--course {
+    width: 85%; } }
 
 @media screen and (max-width: 870px) {
   .about__us__focus__tweets {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 0px;
     display: grid;
     grid-template-columns: 1fr; } }
 
@@ -1269,13 +1624,7 @@
   .about__us__focus__knowledge__text {
     margin: 0 10px 0px 10px;
     width: auto;
-    font-size: 25px; }
-  .about__us__focus__phrase__sub {
-    margin: 30px 0 0px 10%;
-    font-size: 18px; }
-  .about__us__focus__phrase__author {
-    margin: 30px 0 0px 8%;
-    font-size: 15px; } }
+    font-size: 25px; } }
 
 /* <-------MEDIA-------> */
 /* <-------NAVBAR-------> */
@@ -1351,12 +1700,14 @@
   right: 40px;
   top: 20px; }
 
-/* <-------ANIMATION-------> */
 .navLinks:hover {
   color: white;
   border-left: 1px solid white;
   border-right: 1px solid white;
   padding: 1em 1em; }
+
+.navbar__menu img {
+  z-index: 2; }
 
 .navbar__menu img:hover {
   color: #b38a58;
@@ -1369,7 +1720,6 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out; }
 
-/* <-------ANIMATION-------> */
 /* <-------MEDIA-------> */
 @media screen and (max-width: 1024px) {
   .navbar__query {
@@ -1737,6 +2087,23 @@
   border: 2.5px solid #b38a58;
   margin: 0px 10px 24px 0; }
 
+.btn__secundary--buy--select {
+  background-color: #b38a58;
+  color: #ffffff; }
+
+.btn__secundary--politicy--select {
+  border: 2px solid #b38a58; }
+
+.btn__secundary--emergent {
+  width: 135px;
+  color: black;
+  border: 2px solid black; }
+
+.btn__secundary--emergent__shopping {
+  width: 157px;
+  color: black;
+  border: 2px solid black; }
+
 .btn__secundary--register {
   margin: 0; }
 
@@ -1756,6 +2123,20 @@
   width: 19px;
   height: 19px;
   background-image: url(img/arrow-right.svg); }
+
+.btn__arrow__black {
+  width: 24px;
+  height: 24px;
+  background-image: url(img/arrow-right-black.svg);
+  position: relative;
+  top: 15px; }
+
+.btn__arrow__buy__shopping {
+  width: 24px;
+  height: 25px;
+  background-image: url(img/shopping-car-black.svg);
+  position: relative;
+  top: 13px; }
 
 .btn__play__img {
   width: 19px;
@@ -1849,6 +2230,12 @@ button {
 .btn__primary--login:hover {
   border: 1px solid #b38a58; }
 
+.btn__secundary--emergent:hover {
+  border: 2px solid #b38a58; }
+
+.btn__secundary--emergent__shopping:hover {
+  border: 2px solid #b38a58; }
+
 /* <-------ANIMATION-------> */
 /* <-------MEDIA-------> */
 @media screen and (max-width: 1024px) {
@@ -1921,6 +2308,11 @@ body {
   font-family: 'Mont-Regular', Roboto; }
 
 input[type="text"] {
+  padding: 0px 0px 0 10px;
+  font-family: Mont-Regular;
+  font-size: 12px; }
+
+input[type="password"] {
   padding: 0px 0px 0 10px;
   font-family: Mont-Regular;
   font-size: 12px; }
@@ -2097,10 +2489,11 @@ textarea:focus {
   padding: 0px 0 0 200px; }
 
 .hero__view__promo {
-  width: 479px;
-  height: 377px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50px;
+  z-index: 1; }
 
 .hero__view__promo__margin {
   margin: -20px 0 0 0; }
@@ -2109,10 +2502,15 @@ textarea:focus {
   height: 81px;
   margin: 29px 10px 0 44px; }
 
+.hero__view__promo__traingle {
+  position: relative; }
+
 .hero__view__promo__title {
   font-family: "Mont-Bold";
   font-size: 19px;
-  margin: 40px 0 0 0; }
+  margin: 40px 40px 0 0;
+  color: #03002B;
+  text-align: initial; }
 
 .hero__view__promo__price {
   font-family: "Mont-Bold";
@@ -2136,6 +2534,10 @@ textarea:focus {
   color: #03002B;
   margin: 20px; }
 
+.hero__view__promo__price__delete:hover {
+  color: red;
+  cursor: pointer; }
+
 .hero__view__promo__total {
   margin: 20px 0px 0 40px;
   width: 370px;
@@ -2143,10 +2545,14 @@ textarea:focus {
 
 .hero__view__promo__total h2 {
   font-family: "Mont-Bold";
-  font-size: 17px; }
+  font-size: 17px;
+  color: #03002B; }
 
 .hero__view__promo__total__ar {
-  margin: 20px 0 0 150px; }
+  margin: 15px 0 0 150px; }
+
+.hero__view__promo__margin__btn {
+  margin: 0px 0 10px -50px; }
 
 .btn__secundary--promo {
   margin: 10px 0 0 40px;
@@ -2184,7 +2590,8 @@ textarea:focus {
   margin: 50px 200px 50px 200px; }
 
 .btn__secundary--my-course {
-  width: 149px; }
+  width: 149px;
+  margin: 10px 0 30px 0; }
 
 .course__plus__title {
   margin: 10px 0 0 0; }
@@ -2214,168 +2621,270 @@ textarea:focus {
 @media screen and (max-width: 500px) {
   .my-course {
     margin: 50px 10px 50px 10px; } }
-.shopping__car {
-  margin: 0px 200px 0px 200px;
-  transition: all 0.2s ease-in-out; }
+.buyed {
+  margin: 15px 200px 40px 200px; }
 
-.shopping__car h1 {
+.buyed__progress {
+  margin: 50px 0 20px 0; }
+
+.buyed__progress h1 {
   font-family: 'Mont-Bold';
   font-style: normal;
   font-weight: 800;
-  font-size: 26px;
-  line-height: 113.3%;
-  color: #0D0056; }
-
-.shopping__car__box__inside {
-  margin: 40px 51px 0px 40px; }
-
-.hero__view__promo__price--shopping__car {
-  width: 120px; }
-
-.hero__view__promo__price__before--shopping__car {
-  width: 70px; }
-
-.shopping__car__box {
-  width: 370px;
-  height: 275px;
-  background: #F2F2F2;
-  position: relative;
-  left: 70px; }
-
-.shopping__car__box__inside__text {
-  font-family: 'Mont-Light';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 135.3%;
-  text-align: left;
-  letter-spacing: -0.03em;
-  color: #000000;
-  margin: 0px 90px 10px 0; }
-
-.shopping__car__box__inside__text--red {
-  color: #FF3F31; }
-
-.shopping__car__box__inside__promo--red {
-  color: #FF3F31;
-  font-style: normal;
-  font-family: Mont-Bold;
-  font-size: 15px; }
-
-.shopping__car__box__inside__discounts {
-  color: #B38A58;
-  font-style: normal;
-  font-family: Mont-Bold; }
-
-.shopping__car__box__inside__line {
-  border: 1px solid #000000; }
-
-.shopping__car__box__inside strong {
-  font-family: 'Mont-Bold';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 135.3%;
-  text-align: right;
-  letter-spacing: -0.03em;
-  color: #000000; }
-
-.shopping__car__box__inside strong {
-  margin: 0; }
-
-.shopping__car__box__inside__promo {
-  position: relative;
-  top: 20px;
-  left: 10px; }
-
-.shopping__car__line {
-  width: 37vw;
-  border: 1px solid #BDBDBD;
-  margin: 30px 0px 30px 40px; }
-
-.shopping__car__box__inside__total {
-  width: 294px;
-  font-family: 'Mont-Bold';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 17px;
+  font-size: 29px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  position: relative;
   color: #03002B;
-  bottom: 20px; }
+  margin: 20px 0 0 0; }
 
-.shopping__car__box__inside__total--price {
-  position: relative;
-  left: 70px; }
-
-.shopping__car--position {
-  position: relative;
-  left: 50px;
-  top: -10px; }
-
-.hero__view__promo__title--shopping__car {
-  margin: 25px 0 0 0; }
-
-.hero__view__promo__teacher--shopping {
+.buyed__progress h4 {
   font-family: 'Mont-Light';
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 135.3%;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: #4F4F4F;
+  margin: 5px 0 60px 0px; }
+
+.buyed__progress__img {
+  width: 563px;
+  height: 292.86px;
+  margin: 0px 0 0 14vw; }
+
+.buyed__progress__bar {
+  width: 100%;
+  height: 20px;
+  background: #b3b3bf;
+  border-radius: 0px 50px 50px 0px; }
+
+.buyed__bar__line {
+  margin: 20px 0 50px 0; }
+
+.buyed__progress__bar__completed {
+  height: 20px;
+  background: #03002b;
+  border-radius: 0px 50px 50px 0px; }
+
+.buyed__progress__bar__completed p {
+  color: #F2F2F2;
+  position: relative;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 135.3%;
+  letter-spacing: -0.02em;
+  left: 210%;
+  top: 1px;
+  z-index: 2; }
+
+.btn__secundary--buyed__progress {
+  margin: 26px 0 0 0; }
+
+.buyed__progress__media {
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 17px; }
+
+.buyed__bar {
+  margin: 50px 0 0px 0; }
+
+.buyed__bar__text {
+  margin: 0 150px 0px 0px;
+  font-style: normal;
+  font-family: 'Mont-Bold';
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 135.3%;
+  letter-spacing: -0.02em;
+  color: #4F4F4F; }
+
+.buyed__bar__text:hover {
+  color: #03002B;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer; }
+
+.buyed__bar--select {
+  color: #03002B; }
+
+.buyed__text {
+  width: 661px;
+  font-family: Buenard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 151.3%;
+  color: #000000;
+  margin: 28px 0 30px 0px; }
+
+.buyed__font {
+  font-family: 'Mont-Bold';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.52;
+  letter-spacing: -0.48px;
   margin: 0; }
 
-.shopping__car__box__inside__button {
-  position: relative;
-  top: -15px;
-  left: 40px; }
+.buyed_see__more {
+  font-family: 'Mont-Bold';
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  letter-spacing: -0.51px;
+  color: #b38a58;
+  margin: 0 0 40px 0; }
 
-.hero__view__promo__price__delete--shopping__car {
+.buyed_see__more:hover {
+  cursor: pointer;
+  color: #0d0056;
+  transition: all 0.2s ease-in-out; }
+
+.buyed__teacher {
+  margin: 30px 0 80px 0px; }
+
+.buyed__teacher__tittle {
+  font-family: 'Mont-Bold';
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.4px;
+  color: #03002b;
+  margin: 0 0 17px 0; }
+
+.buyed__teacher__inside {
+  margin: 0px 0px 0px 20px; }
+
+.buyed__teacher__photo {
+  width: 198px;
+  height: 198px; }
+
+.buyed__teacher__socials {
+  margin: 0;
+  width: 21px;
+  height: 17px; }
+
+.buyed__teacher h3 {
+  margin: 0;
+  font-size: 17px;
+  font-family: Mont-Semi-Bold;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.51px;
+  color: #03002b; }
+
+.buyed__teacher p {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Mont-Regular;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: -0.45px;
+  color: #000000;
+  margin: 0; }
+
+.buyed__teacher strong {
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 135.3%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 20px 30px 20px 0; }
+
+.buyed__teacher__info {
+  width: 572px;
+  font-family: Judson;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 152.3%;
+  color: #000000;
+  margin: 0; }
+
+.buyed__course__variant__text {
+  margin: 30px 0 30px 0; }
+
+.buyed__course__variant__text h4 {
+  font-family: 'Mont-Bold';
+  font-weight: bold;
+  line-height: 1.19;
+  letter-spacing: -0.51px; }
+
+.buyed__course__variant__text li {
+  margin: 10px 0 0 0; }
+
+.buyed__teacher__mobile {
+  height: 78px;
+  background: #F2F2F2;
+  margin: 0 0 20px 0; }
+
+.buyed__teacher__mobile__left {
+  width: 42px;
+  height: 78px;
+  background: #03002B; }
+
+.buyed__teacher__mobile__center {
+  margin: 0px 0px 0 10px; }
+
+.buyed__teacher__mobile__center h5 {
+  margin: 25px 0px 0 10px;
+  font-family: 'Mont-Bold';
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000; }
+
+.buyed__teacher__mobile__center p {
+  margin: 0px 0px 0 10px;
+  font-family: 'Mont-Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000; }
+
+.buyed__teacher__mobile__right {
   position: absolute;
-  left: 47vw; }
+  right: 30px;
+  margin: 20px 0 0 0; }
 
-@media screen and (max-width: 1325px) {
-  .shopping-none {
-    display: none; }
-  .shopping__car {
-    margin: 0px 150px 0px 150px; } }
+.buyed__teacher__mobile__right {
+  position: absolute;
+  right: 130px;
+  margin: 30px 0 0 0; }
+
+.buyed__teacher__mobile__img {
+  margin: 28px 0px 0 10px; }
 
 @media screen and (max-width: 1024px) {
-  .shopping__car {
-    margin: 0px 5% 0px 5%; }
-  .shopping__car__box {
-    width: auto;
-    height: auto;
-    position: revert; }
-  .hero__view__promo__price__delete--shopping__car {
-    position: relative;
-    margin: 0;
-    left: 0; }
-  .hero__view__promo__price__delete {
-    margin: 0; }
-  .shopping__car__line {
-    width: 85vw;
-    margin: 30px 0px 30px 0px; }
-  .shopping__car__box__inside {
-    margin: 50px 0 0 0;
-    padding: 13px 25% 0 15%; }
-  .shopping__car__box__inside__total {
-    margin: 10px 0 10px 0;
-    bottom: 0;
-    width: auto; }
-  .shopping__car__box__inside__total {
-    font-family: 'Mont-Light'; }
-  .shopping__car__box__inside__total--price {
-    font-family: 'Mont-Bold';
-    left: 20%; }
-  .btn__secundary--buy {
-    margin: 30px 0px 24px 0px; }
-  .shopping__car__box__inside__text {
-    margin: 0px 15% 10px 0; }
-  .shopping__car__box__inside__mobile {
-    margin: 20px 0 10px 0; } }
+  .buyed {
+    margin: 15px 100px 40px 100px; }
+  .buyed__progress__img {
+    width: 100vw;
+    margin: 0px 0 0 0; }
+  .buyed__progress {
+    margin: 10px 0 20px 0; }
+  .buyed__progress h4 {
+    margin: 5px 0 10px 0px; } }
+
+@media screen and (max-width: 562px) {
+  .buyed {
+    margin: 15px 10px 40px 10px; }
+  .buyed__teacher__mobile__right {
+    position: absolute;
+    right: 40px;
+    margin: 30px 0 0 0; } }
 .payment {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2465,7 +2974,25 @@ textarea:focus {
   background: #FFFFFF;
   box-shadow: 0px 0px 9px rgba(6, 0, 37, 0.2);
   display: inline-block;
-  margin: 24px 14px 33px 0px; }
+  margin: 24px 14px 33px 0px;
+  cursor: pointer; }
+
+.way-to-pay__box__card--mercado__pago__text {
+  font-family: 'Mont-Bold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 135.3%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  width: 304px; }
+
+.way-to-pay__box__card--mercado__pago__text__btn {
+  margin: 45px; }
+
+.way-to-pay__box__card--mercado__pago__text__btn:hover {
+  background-color: #03002b; }
 
 .way-to-pay__box__card__img {
   position: relative;
@@ -2498,11 +3025,13 @@ textarea:focus {
 
 .details {
   width: 468px;
-  height: 193px;
   background: #F2F2F2; }
 
+.details hr {
+  margin: 0px 0 25px 0; }
+
 .details__inside {
-  margin: 30px 30px 0px 60px; }
+  margin: 30px 30px 0px 43px; }
 
 .details__inside__title__edit {
   position: relative;
@@ -2553,7 +3082,9 @@ textarea:focus {
 .details__inside__detail {
   margin: 20px 0 0 0;
   font-family: 'Mont-Light';
-  font-size: 16px; }
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0px 0 20px 0; }
 
 .details__inside__detail p {
   margin: 0 10px 0 0px;
@@ -2757,241 +3288,6 @@ textarea:focus {
     width: auto; }
   .congratulation__box__inside {
     padding: 50px 0 0 50px; } }
-.buyed {
-  margin: 15px 200px 40px 200px; }
-
-.buyed__progress {
-  margin: 50px 0 20px 0; }
-
-.buyed__progress h1 {
-  font-family: 'Mont-Bold';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 29px;
-  line-height: 135.3%;
-  letter-spacing: -0.02em;
-  color: #03002B;
-  margin: 20px 0 0 0; }
-
-.buyed__progress h4 {
-  font-family: 'Mont-Light';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 135.3%;
-  letter-spacing: -0.02em;
-  color: #4F4F4F;
-  margin: 5px 0 60px 0px; }
-
-.buyed__progress__img {
-  width: 563px;
-  height: 292.86px;
-  margin: 0px 0 0 14vw; }
-
-.btn__secundary--buyed__progress {
-  margin: 26px 0 0 0; }
-
-.buyed__progress__media {
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 17px; }
-
-.buyed__bar {
-  margin: 50px 0 0px 0; }
-
-.buyed__bar p {
-  margin: 0 150px 0px 0px;
-  font-style: normal;
-  font-family: 'Mont-Bold';
-  font-weight: 800;
-  font-size: 19px;
-  line-height: 135.3%;
-  letter-spacing: -0.02em;
-  color: #4F4F4F; }
-
-.buyed__bar p:hover {
-  color: #03002B;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer; }
-
-.buyed__text {
-  width: 661px;
-  font-family: Buenard;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 151.3%;
-  color: #000000;
-  margin: 28px 0 30px 0px; }
-
-.buyed__font {
-  font-family: 'Mont-Bold';
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.52;
-  letter-spacing: -0.48px;
-  margin: 0; }
-
-.buyed_see__more {
-  font-family: 'Mont-Bold';
-  font-size: 17px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.52;
-  letter-spacing: -0.51px;
-  color: #b38a58;
-  margin: 0 0 40px 0; }
-
-.buyed_see__more:hover {
-  cursor: pointer;
-  color: #0d0056;
-  transition: all 0.2s ease-in-out; }
-
-.buyed__teacher {
-  margin: 30px 0 80px 0px; }
-
-.buyed__teacher__tittle {
-  font-family: 'Mont-Bold';
-  font-size: 20px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.35;
-  letter-spacing: -0.4px;
-  color: #03002b;
-  margin: 0 0 17px 0; }
-
-.buyed__teacher__inside {
-  margin: 0px 0px 0px 20px; }
-
-.buyed__teacher__photo {
-  width: 198px;
-  height: 198px; }
-
-.buyed__teacher__socials {
-  margin: 0;
-  width: 21px;
-  height: 17px; }
-
-.buyed__teacher h3 {
-  margin: 0;
-  font-size: 17px;
-  font-family: Mont-Semi-Bold;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.35;
-  letter-spacing: -0.51px;
-  color: #03002b; }
-
-.buyed__teacher p {
-  font-size: 15px;
-  font-weight: 600;
-  font-family: Mont-Regular;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.35;
-  letter-spacing: -0.45px;
-  color: #000000;
-  margin: 0; }
-
-.buyed__teacher strong {
-  font-family: 'Mont-Bold';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 15px;
-  line-height: 135.3%;
-  letter-spacing: -0.03em;
-  color: #000000;
-  margin: 20px 30px 20px 0; }
-
-.buyed__teacher__info {
-  width: 572px;
-  font-family: Judson;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 152.3%;
-  color: #000000;
-  margin: 0; }
-
-.buyed__course__variant__text {
-  margin: 30px 0 30px 0; }
-
-.buyed__course__variant__text h4 {
-  font-family: 'Mont-Bold';
-  font-weight: bold;
-  line-height: 1.19;
-  letter-spacing: -0.51px; }
-
-.buyed__course__variant__text li {
-  margin: 10px 0 0 0; }
-
-.buyed__teacher__mobile {
-  height: 78px;
-  background: #F2F2F2;
-  margin: 0 0 20px 0; }
-
-.buyed__teacher__mobile__left {
-  width: 42px;
-  height: 78px;
-  background: #03002B; }
-
-.buyed__teacher__mobile__center {
-  margin: 0px 0px 0 10px; }
-
-.buyed__teacher__mobile__center h5 {
-  margin: 25px 0px 0 10px;
-  font-family: 'Mont-Bold';
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: -0.02em;
-  color: #000000; }
-
-.buyed__teacher__mobile__center p {
-  margin: 0px 0px 0 10px;
-  font-family: 'Mont-Regular';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: -0.02em;
-  color: #000000; }
-
-.buyed__teacher__mobile__right {
-  position: absolute;
-  right: 30px;
-  margin: 20px 0 0 0; }
-
-.buyed__teacher__mobile__right {
-  position: absolute;
-  right: 130px;
-  margin: 30px 0 0 0; }
-
-.buyed__teacher__mobile__img {
-  margin: 28px 0px 0 10px; }
-
-@media screen and (max-width: 1024px) {
-  .buyed {
-    margin: 15px 100px 40px 100px; }
-  .buyed__progress__img {
-    width: 100vw;
-    margin: 0px 0 0 0; }
-  .buyed__progress {
-    margin: 10px 0 20px 0; }
-  .buyed__progress h4 {
-    margin: 5px 0 10px 0px; } }
-
-@media screen and (max-width: 562px) {
-  .buyed {
-    margin: 15px 10px 40px 10px; }
-  .buyed__teacher__mobile__right {
-    position: absolute;
-    right: 40px;
-    margin: 30px 0 0 0; } }
 .data {
   margin: 42px 200px 50px 200px;
   height: 680px; }
@@ -3093,6 +3389,10 @@ textarea:focus {
   border: 2px solid black;
   margin: 5px 0 0 0; }
 
+.btn__secundary--politicy--select {
+  color: white;
+  border: 2px solid #b38a58; }
+
 .btn__secundary--politicy:hover {
   border: 2px solid #b38a58; }
 
@@ -3124,10 +3424,32 @@ textarea:focus {
   font-family: 'Mont-Bold';
   color: black; }
 
-.politicy__inside__right p {
+.politicy__inside__right__title--help__center {
+  font-family: 'Mont-Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 152.3%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 50px 0 0 0; }
+
+.politicy__inside__right__title--help__center__link {
+  color: #B38A58; }
+
+.politicy__inside__right__text {
   font-size: 15px;
   font-family: 'Judson';
   margin: 0 0 30px 0; }
+
+.politicy__inside__right__text--help__center {
+  font-family: 'Mont-Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 143.3%;
+  letter-spacing: -0.03em;
+  color: #000000; }
 
 .contact__socials--youtube {
   display: block;
@@ -3208,6 +3530,12 @@ textarea:focus {
   line-height: 135.3%;
   letter-spacing: -0.03em;
   color: #000000; }
+
+@media screen and (max-width: 1250px) {
+  .data {
+    margin: 42px 0px 50px 20px; }
+  .politicy__inside__right {
+    margin: -25px 0px 0px 25px; } }
 
 @media screen and (max-width: 1024px) {
   .data {
