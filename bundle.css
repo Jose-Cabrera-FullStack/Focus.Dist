@@ -101,7 +101,7 @@
   font-size: 26px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
+  color: #03002b;
   padding: 0 0 32px 0; }
 
 .course__section__name {
@@ -134,17 +134,17 @@
 
 .course__information h1 {
   width: 302px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .course__information__text {
   width: 154px;
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-weight: 600;
   font-size: 15px;
   margin: 20px; }
@@ -162,14 +162,14 @@
   margin: 50px 0 0 33px; }
 
 .discovery__box__info__inside__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   width: 266px;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 117.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .discovery__box__info__inside__text {
   width: 243px;
@@ -184,14 +184,14 @@
   color: #000000; }
 
 .discovery__box__info__inside__price {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   margin: 0;
   font-style: normal;
   font-weight: 800;
   font-size: 27px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .discovery__box__info__inside__save {
   font-family: "Mont-Bold";
@@ -200,13 +200,13 @@
   font-size: 17px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #FF3F31;
+  color: #ff3f31;
   margin: 10px 0 0 10px; }
 
 .discovery__box__info__inside__before {
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
-  width: 106px;
+  width: auto;
   font-weight: 600;
   font-size: 15px;
   line-height: 135.3%;
@@ -219,7 +219,7 @@
   font-style: normal; }
 
 .discovery__box__info__inside__percentage {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -236,22 +236,22 @@
   margin: 15px 0 0 0; }
 
 .couse__about h1 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .course__info__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
+  color: #03002b;
   margin: 40px 0 27px 0; }
 
 .course__about p {
@@ -270,7 +270,7 @@
 
 .course__inclusive {
   height: 342px;
-  background: #E0E0E0; }
+  background: #e0e0e0; }
 
 .course__inclusive__inside {
   margin: 0px 0 0 200px;
@@ -287,19 +287,19 @@
   right: 240px; }
 
 .course__inclusive__inside h1 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .course__inclusive__inside li {
   margin: 4px 0 0 0; }
 
 .course__inclusive__inside h2 {
-  font-family: 'Mont-Bold'; }
+  font-family: "Mont-Bold"; }
 
 .course__inclusive__inside p {
   width: 429px;
@@ -315,7 +315,7 @@
   padding: 0 0 0 20px; }
 
 .course__for__me h2 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   margin: 52px 0 34px 0; }
 
 .course__for__me li {
@@ -342,7 +342,7 @@
   width: 659px;
   margin: 10px 0 0 0;
   height: 55px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   cursor: pointer;
   user-select: none; }
 
@@ -351,7 +351,7 @@
   height: 47px; }
 
 .course__module__element__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
@@ -360,7 +360,7 @@
   color: #000000; }
 
 .course__module__element__title--help__center {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 13px;
@@ -374,7 +374,7 @@
 
 .course__module__element__inside {
   width: 659px;
-  background: #E0E0E0;
+  background: #e0e0e0;
   margin: 3px 0 0 0; }
 
 .course__module__element__inside--teacher {
@@ -405,7 +405,7 @@
   margin: 10px 0 16px 0; }
 
 .course__module__element__inside__right h5 {
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -425,7 +425,7 @@
   color: #828282; }
 
 .course__module__sub__title {
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -448,7 +448,7 @@
 .course__module__time p {
   font-size: 12px;
   margin: 0 0px 0px 5px;
-  color: #4F4F4F; }
+  color: #4f4f4f; }
 
 .course__module__reloj {
   width: 15px;
@@ -476,7 +476,7 @@
   top: -35px; }
 
 .course__recomendation {
-  background: #03002B;
+  background: #03002b;
   margin: 92px 0 50px 0;
   padding: 0;
   color: #ffff; }
@@ -490,7 +490,7 @@
   gap: 1px 1px; }
 
 .course__recomendation__inside__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
@@ -498,7 +498,7 @@
   margin: 0 0 40px 0px;
   letter-spacing: -0.02em;
   /* Dorado */
-  color: #B38A58; }
+  color: #b38a58; }
 
 .course__recomendation__inside__profile {
   margin: 0; }
@@ -536,14 +536,14 @@
 
 .course__recomendation__arrows__numb {
   margin: 5px 35px 0 35px;
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px; }
 
 .course__teach h3 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   margin: 70px 0 0px 22px; }
 
 .course__teach p {
@@ -551,7 +551,7 @@
 
 .course__teach strong {
   margin: 10px 20px 10px 20px;
-  font-family: 'Mont-Heavy';
+  font-family: "Mont-Heavy";
   font-weight: 800;
   font-size: 13px;
   line-height: 135.3%;
@@ -565,7 +565,7 @@
   left: -20px; }
 
 .course__teach__socials img {
-  margin: 0px 0px 0px 10px; }
+  margin: 22px 0px 0px 10px; }
 
 .course__teach__info {
   width: 637px;
@@ -580,7 +580,7 @@
 .course__certificate {
   width: 819px;
   height: 311px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin: 0px 0 72px 0; }
 
 .course__certificate__img {
@@ -594,12 +594,12 @@
 .course__certificate h2 {
   width: 315px;
   height: 54px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 19px;
   line-height: 109.3%;
-  color: #03002B; }
+  color: #03002b; }
 
 .course__certificate p {
   width: 365px;
@@ -611,11 +611,22 @@
   line-height: 130.3%;
   color: #000000; }
 
+.discovery__box__info--mobile {
+  display: none; }
+
 @media screen and (max-width: 1300px) {
   .course__inclusive__diploma {
     right: 130px; }
   .discovery__box__info {
-    display: none; } }
+    display: none; }
+  .discovery__box__info--mobile {
+    display: block; }
+  .discovery__box__info__inside__title {
+    display: none; }
+  .discovery__box__info__inside__text {
+    display: none; }
+  .discovery__box__info__inside {
+    margin: 50px 0 0 0; } }
 
 @media screen and (max-width: 1130px) {
   .course__inclusive__diploma {
@@ -639,10 +650,10 @@
     font-size: 19px;
     line-height: 135.3%;
     letter-spacing: -0.02em;
-    color: #03002B; }
+    color: #03002b; }
   .course__recomendation__inside__text {
     padding: 0px 0 20px 0px;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid #e0e0e0;
     font-family: Judson;
     font-style: normal;
     font-weight: normal;
@@ -661,18 +672,18 @@
     font-weight: 800;
     font-size: 15px;
     line-height: 113.3%;
-    color: #03002B; }
+    color: #03002b; }
   .course__teach__info {
     margin: 40px 0px 0px 0px;
     width: auto; }
   .course__about h1 {
-    font-family: 'Mont-Bold';
+    font-family: "Mont-Bold";
     font-style: normal;
     font-weight: 800;
     font-size: 26px;
     line-height: 135.3%;
     letter-spacing: -0.02em;
-    color: #03002B; }
+    color: #03002b; }
   .course__about p {
     width: auto; }
   .course__module li {
@@ -703,12 +714,20 @@
   .course__teach strong {
     margin: 10px 20px 10px 0px; }
   .course__module__element {
-    width: auto; }
+    width: auto;
+    margin: 10px 20px 0 20px; }
   .course__module__element__inside {
     width: auto; }
   .course__module__element__inside--help__center {
     margin: 3px 0px 30px 0;
-    padding: 20px 0px 0px 20px; } }
+    padding: 20px 0px 0px 20px; }
+  .course__certificate {
+    width: auto;
+    height: auto; } }
+
+@media screen and (max-width: 450px) {
+  .course__module__arrow--buyed {
+    left: 75%; } }
 /* <-------DISCOVERY-------> */
 .discovery__container {
   margin: 0 200px 0 200px;
@@ -733,6 +752,7 @@
   grid-template-areas: ". ."; }
 
 .discovery__box {
+  user-select: none;
   width: 350px; }
 
 .discovery__box__price__off {
@@ -846,6 +866,7 @@
   top: 7px; }
 
 .discovery__diploma {
+  user-select: none;
   width: 280px;
   height: 478px;
   background-image: linear-gradient(to bottom, #03002be0, #03002bed), url(img/principal-image.png);
@@ -1648,6 +1669,177 @@
     font-size: 25px; } }
 
 /* <-------MEDIA-------> */
+/* <-------NAVBAR-------> */
+.navbar {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  text-align: center;
+  background: #03002b;
+  height: 56px; }
+
+.navbar__img {
+  width: 35px;
+  height: 33px;
+  position: relative;
+  right: 22px;
+  bottom: 5px; }
+
+.navbar__menu__shopping__cart {
+  width: 30px;
+  position: relative;
+  bottom: 22px;
+  margin: 0 0 0 10px; }
+
+.navbar__menu__shopping__cart--fix {
+  bottom: 7px; }
+
+.navbar__menu__shopping__cart__notification {
+  background: #b38a58;
+  position: relative;
+  left: 37px;
+  bottom: 10px;
+  z-index: 3;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px; }
+
+.navbar__menu__shopping__cart__notification--mobile {
+  background: #b38a58;
+  position: absolute;
+  right: 97px;
+  top: 10px;
+  z-index: 3;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px; }
+
+.navbar__menu__shopping__cart__number {
+  color: #03002b;
+  font-family: "Mont-Bold";
+  font-size: 12px;
+  position: relative;
+  bottom: 4px;
+  user-select: none; }
+
+.navbar__element__list {
+  display: flex;
+  color: #f2f2f2;
+  list-style: none; }
+
+.navbar__menu {
+  font-style: normal;
+  margin: 0px 0 0 20px;
+  list-style: none;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none; }
+
+.navbar__menu:hover {
+  color: #b38a58;
+  transition: all 0.2s ease-in-out; }
+
+.navbar__menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Mont-Light;
+  width: 150px;
+  margin: 0 10px 0 0; }
+
+.navbar__menu--fix {
+  width: 4vw;
+  margin: 0 0px 0px 10px; }
+
+.navLinks {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f2f2; }
+
+.navbar__justify__self {
+  justify-self: end;
+  margin: 0 40px 0px 0px; }
+
+.navbar__hamburguer__shopping {
+  display: none;
+  position: absolute;
+  right: 100px;
+  top: 10px; }
+
+.navbar__hamburguer {
+  display: none;
+  position: absolute;
+  right: 40px;
+  top: 20px; }
+
+.navLinks:hover {
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 1em 1em; }
+
+.navbar__menu img {
+  z-index: 2; }
+
+.navbar__menu img:hover {
+  color: #b38a58;
+  filter: invert(0.5) sepia(9);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+
+.navbar__img:hover {
+  filter: invert(0.5) sepia(9);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+
+/* <-------MEDIA-------> */
+@media screen and (max-width: 1024px) {
+  .navbar__query {
+    display: none;
+    transition: all 0.2s ease-in-out; }
+  .navbar__hamburguer {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }
+  .navbar__hamburguer__shopping {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer; }
+  .navbar__hamburguer__toggle {
+    background: #03002b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 300; }
+  .navbar__hamburguer__toggle__logo {
+    position: absolute;
+    left: 10px;
+    margin: 15px 0 0px 10px; }
+  .navbar__hamburguer__toggle__arrow {
+    position: absolute;
+    right: 10px;
+    margin: 20px; }
+  .navbar__hamburguer__toggle__menu {
+    list-style: none;
+    font-family: "Mont-Bold";
+    color: #fff;
+    font-size: 20px;
+    width: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, 30%);
+    margin-bottom: 100px; }
+  .navbar__hamburguer__toggle__menu__list li {
+    list-style: none;
+    font-family: "Mont-Bold";
+    font-size: 20px;
+    color: #fff;
+    margin: 20px 0 0 0; } }
+
+/* <-------MEDIA-------> */
 .login {
   display: flex;
   place-content: center;
@@ -1750,135 +1942,6 @@
   width: 27px;
   height: 27px;
   margin-right: 8px; }
-/* <-------NAVBAR-------> */
-.navbar {
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  align-items: center;
-  text-align: center;
-  background: #03002b;
-  height: 56px; }
-
-.navbar__img {
-  width: 35px;
-  height: 33px;
-  position: relative;
-  right: 22px;
-  bottom: 5px; }
-
-.navbar__menu__shopping__cart {
-  width: 30px;
-  position: relative;
-  bottom: 22px;
-  margin: 0 0 0 10px; }
-
-.navbar__menu__shopping__cart--fix {
-  bottom: 7px; }
-
-.navbar__menu__shopping__cart__notification {
-  background: #B38A58;
-  position: relative;
-  left: 37px;
-  bottom: 10px;
-  z-index: 3;
-  border-radius: 50%;
-  height: 15px;
-  width: 15px; }
-
-.navbar__menu__shopping__cart__number {
-  color: #03002b;
-  font-family: 'Mont-Bold';
-  font-size: 12px;
-  position: relative;
-  bottom: 3px;
-  user-select: none; }
-
-.navbar__element__list {
-  display: flex;
-  color: #f2f2f2;
-  list-style: none; }
-
-.navbar__menu {
-  font-style: normal;
-  margin: 0px 0 0 20px;
-  list-style: none;
-  font-size: 15px;
-  color: #fff;
-  text-decoration: none; }
-
-.navbar__menu:hover {
-  color: #b38a58;
-  transition: all 0.2s ease-in-out; }
-
-.navbar__menu a {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: Mont-Light;
-  width: 150px;
-  margin: 0 10px 0 0; }
-
-.navbar__menu--fix {
-  width: 4vw;
-  margin: 0 0px 0px 10px; }
-
-.navLinks {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #f2f2f2; }
-
-.navbar__justify__self {
-  justify-self: end;
-  margin: 0 40px 0px 0px; }
-
-.navbar__hamburguer__shopping {
-  display: none;
-  position: absolute;
-  right: 100px;
-  top: 10px; }
-
-.navbar__hamburguer {
-  display: none;
-  position: absolute;
-  right: 40px;
-  top: 20px; }
-
-.navLinks:hover {
-  color: white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  padding: 1em 1em; }
-
-.navbar__menu img {
-  z-index: 2; }
-
-.navbar__menu img:hover {
-  color: #b38a58;
-  filter: invert(0.5) sepia(9);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out; }
-
-.navbar__img:hover {
-  filter: invert(0.5) sepia(9);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out; }
-
-/* <-------MEDIA-------> */
-@media screen and (max-width: 1024px) {
-  .navbar__query {
-    display: none;
-    transition: all 0.2s ease-in-out; }
-  .navbar__hamburguer {
-    display: block;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer; }
-  .navbar__hamburguer__shopping {
-    display: block;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer; } }
-
-/* <-------MEDIA-------> */
 /* <-------FOOTER-------> */
 .footer {
   height: 377px;
@@ -2860,6 +2923,9 @@ textarea:focus {
   cursor: pointer;
   transition: all 0.2s ease-in-out; }
 
+.my-course__menu--select:hover {
+  cursor: context-menu; }
+
 .my-course__individual {
   display: grid;
   grid-template-rows: 1fr;
@@ -2890,17 +2956,34 @@ textarea:focus {
 @media screen and (max-width: 1024px) {
   .hero__view__promo__img {
     margin: 29px 10px 0 0px; }
+  .hero__view__promo__img--mobile {
+    height: 100px;
+    margin: 29px 10px 0 44px;
+    width: 130px; }
   .my-course__individual {
     display: grid;
     grid-template-rows: 1fr;
     gap: 17px 24px;
     grid-template-areas: "."; }
   .my-course {
-    margin: 50px 100px 50px 100px; } }
+    margin: 50px 100px 50px 100px; }
+  .hero__view__promo {
+    width: 100vw;
+    background: #ffffff;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    right: 0; } }
 
 @media screen and (max-width: 500px) {
   .my-course {
-    margin: 50px 10px 50px 10px; } }
+    margin: 50px 10px 50px 10px; }
+  .hero__view__promo__img--mobile {
+    margin: 29px 10px 0 5px; }
+  .hero__view__promo__total {
+    margin: 20px 5px 0px 5px; }
+  .hero__view__promo__margin__btn {
+    margin: 0px 5px 10px 5px; } }
 .buyed {
   margin: 15px 200px 40px 200px; }
 
@@ -3156,7 +3239,15 @@ textarea:focus {
   .buyed__progress {
     margin: 10px 0 20px 0; }
   .buyed__progress h4 {
-    margin: 5px 0 10px 0px; } }
+    margin: 5px 0 10px 0px; }
+  .buyed__classes {
+    height: 140%;
+    width: 100vw;
+    background: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0; } }
 
 @media screen and (max-width: 562px) {
   .buyed {
@@ -3475,6 +3566,9 @@ textarea:focus {
   top: 25px;
   left: 20px; }
 
+.details__inside__detail__empty {
+  padding: 0px 0 20px 0; }
+
 .details__inside__detail {
   margin: 20px 0 0 0;
   font-family: "Mont-Light";
@@ -3701,7 +3795,10 @@ textarea:focus {
   .way-to-pay__input__box {
     margin: 20px 0 0 10px; }
   .way-to-pay__input__box--variant {
-    margin: 20px 0 0 20px; } }
+    margin: 20px 0 0 20px; }
+  .details__inside__edit {
+    position: absolute;
+    right: -30px; } }
 .data {
   margin: 42px 200px 50px 200px;
   height: 680px; }
