@@ -2625,8 +2625,8 @@ textarea:focus {
   .display__screen__mobile__without__flex {
     display: block; } }
 .visualization {
-  background: #03002B;
-  color: #F2F2F2; }
+  background: #03002b;
+  color: #f2f2f2; }
 
 .visualization__navbar {
   padding: 5px 0 20px 70px;
@@ -2635,13 +2635,13 @@ textarea:focus {
 
 .visualization__navbar h5 {
   height: 20px;
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #F2F2F2; }
+  color: #f2f2f2; }
 
 .visualization__grid {
   display: grid;
@@ -2682,35 +2682,51 @@ textarea:focus {
   margin: 10px 0px 0px 65px; }
 
 .visualization__sidebar__title {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0; }
+
+.visualization__sidebar__status {
+  position: relative;
+  right: 34px;
+  z-index: 3;
+  bottom: 18px; }
+
+.visualization__sidebar__inside__status {
+  margin: 20px 0 0 0;
+  position: relative;
+  left: 35px;
+  bottom: 60px;
+  z-index: 3; }
 
 .visualization__sidebar__arrow {
   margin: 5px 0 0 0px;
   position: relative;
-  left: 180px;
+  left: 165px;
+  bottom: 15px;
   width: 29px; }
 
 .visualization__sidebar__arrow--up {
   margin: 5px 0 0 0px;
   position: relative;
   left: 180px;
+  left: 165px;
+  bottom: 15px;
   width: 24px; }
 
 .visualization__sidebar__text {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: -0.02em;
-  color: #F2F2F2;
+  color: #f2f2f2;
   margin: 0; }
 
 .visualization__sidebar__inside {
@@ -2726,8 +2742,7 @@ textarea:focus {
 
 .visualization__sidebar__inside--watching {
   background: #5e5c75;
-  cursor: context-menu;
-  margin: 0; }
+  cursor: context-menu; }
 
 .visualization__sidebar__inside--watching:hover {
   background: #5e5c75; }
@@ -2735,25 +2750,55 @@ textarea:focus {
 .visualization__sidebar__inside__title {
   width: 223px;
   padding-top: 16px;
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
-  margin: 0 0 3px 60px; }
+  color: #ffffff;
+  position: relative;
+  margin: 0px 0px 3px 75px;
+  bottom: 105px; }
 
 .visualization__sidebar__inside__text {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.02em;
-  color: #F2F2F2;
-  margin: 0px 0 20px 60px; }
+  color: #f2f2f2;
+  margin: 0px 0px 3px 75px;
+  position: relative;
+  bottom: 105px; }
 
 .visualization__sidebar__inside__text--watching {
-  color: #03002B;
-  font-size: 14px; }
+  color: #03002b; }
+
+.visualization__sidebar__absolute {
+  position: absolute; }
+
+.visualization__vertical__line {
+  border-left: 3px solid #b38a58;
+  height: 67px;
+  position: relative;
+  width: 0;
+  top: -30px;
+  left: 41px; }
+
+.visualization__vertical__line--last {
+  top: -30px; }
+
+.visualization__vertical__line--module {
+  border-left: 3px solid #b38a58;
+  height: 67px;
+  position: relative;
+  right: 25px;
+  top: -50px; }
+
+.visualization__vertical__line--module--first {
+  top: 20px; }
+
+.visualization__vertical__line--module--last {
+  top: -50px; }
 
 .visualization__video {
   position: relative;
