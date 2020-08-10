@@ -13,7 +13,7 @@
   margin: 0.5% 0 1.5% 0; }
 
 .home__view h1 {
-  font-family: 'Mont-Bold', Roboto;
+  font-family: "Mont-Bold", Roboto;
   font-size: 35px;
   padding: 0px 0 0 192px;
   letter-spacing: -0.02em;
@@ -105,7 +105,7 @@
   padding: 0 0 32px 0; }
 
 .course__section__name {
-  margin: 16px 0 25px 0; }
+  margin: 0px 0 35px 0; }
 
 .course__section__tech {
   margin: 0 0 0px -30px; }
@@ -504,7 +504,8 @@
   margin: 0; }
 
 .course__recomendation__inside__name {
-  margin: 8px 0 0 20px; }
+  margin: 8px 0 0 20px;
+  font-family: "Mont-Bold"; }
 
 .course__recomendation__inside__text {
   width: 360px;
@@ -556,7 +557,9 @@
   font-size: 13px;
   line-height: 135.3%;
   letter-spacing: -0.03em;
-  color: #000000; }
+  color: #000000;
+  position: relative;
+  top: 12.5px; }
 
 .course__teach__socials {
   margin: 0px 0 0 0px;
@@ -566,6 +569,12 @@
 
 .course__teach__socials img {
   margin: 22px 0px 0px 10px; }
+
+.course__teach__socials img:hover {
+  color: #b38a58;
+  filter: invert(0.5) sepia(9);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
 
 .course__teach__info {
   width: 637px;
@@ -717,7 +726,8 @@
     width: auto;
     margin: 10px 20px 0 20px; }
   .course__module__element__inside {
-    width: auto; }
+    width: auto;
+    margin: 2px 20px 0 20px; }
   .course__module__element__inside--help__center {
     margin: 3px 0px 30px 0;
     padding: 20px 0px 0px 20px; }
@@ -782,7 +792,8 @@
   position: fixed;
   top: 70px;
   z-index: 1;
-  right: 50px; }
+  right: 50px;
+  user-select: none; }
 
 .discovery__box__info__course {
   background-image: linear-gradient(to top, #dad9d99e, #f2f2f2);
@@ -872,7 +883,9 @@
   background-image: linear-gradient(to bottom, #03002be0, #03002bed), url(img/principal-image.png);
   background-size: cover;
   background-position: -240px;
-  margin: 0 0px 0 20px; }
+  margin: 0 0px 0 20px;
+  position: sticky;
+  top: 10px; }
 
 .discovery__diploma__star {
   margin: 50px 0 0 45%;
@@ -977,31 +990,31 @@
   transition: all 0.2s ease-in-out; }
 
 .shopping__car h1 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 26px;
   line-height: 113.3%;
-  color: #0D0056; }
+  color: #0d0056; }
 
 .shopping__car__box__inside {
   margin: 40px 51px 0px 40px; }
 
-.hero__view__promo__price--shopping__car {
-  width: 120px; }
-
-.hero__view__promo__price__before--shopping__car {
-  width: 70px; }
+.shopping__car__icon__squad:hover {
+  color: #b38a58;
+  filter: invert(0.5) sepia(9);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
 
 .shopping__car__box {
   width: 370px;
   height: 275px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   position: relative;
   left: 70px; }
 
 .shopping__car__box__inside__text {
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -1012,16 +1025,16 @@
   margin: 0px 90px 10px 0; }
 
 .shopping__car__box__inside__text--red {
-  color: #FF3F31; }
+  color: #ff3f31; }
 
 .shopping__car__box__inside__promo--red {
-  color: #FF3F31;
+  color: #ff3f31;
   font-style: normal;
   font-family: Mont-Bold;
   font-size: 15px; }
 
 .shopping__car__box__inside__discounts {
-  color: #B38A58;
+  color: #b38a58;
   font-style: normal;
   font-family: Mont-Bold; }
 
@@ -1029,7 +1042,7 @@
   border: 1px solid #000000; }
 
 .shopping__car__box__inside strong {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -1047,19 +1060,19 @@
 
 .shopping__car__line {
   width: 37vw;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   margin: 30px 0px 30px 40px; }
 
 .shopping__car__box__inside__total {
   width: 294px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 17px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
   position: relative;
-  color: #03002B;
+  color: #03002b;
   bottom: 20px; }
 
 .shopping__car__box__inside__total--price {
@@ -1071,17 +1084,14 @@
   left: 50px;
   top: -10px; }
 
-.hero__view__promo__title--shopping__car {
-  margin: 25px 0 0 0; }
-
 .hero__view__promo__teacher--shopping {
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 135.3%;
   letter-spacing: -0.03em;
-  color: #4F4F4F;
+  color: #4f4f4f;
   margin: 0; }
 
 .shopping__car__box__inside__button {
@@ -1089,34 +1099,34 @@
   top: -15px;
   left: 40px; }
 
-.hero__view__promo__price__delete--shopping__car {
-  position: absolute;
-  left: 47vw; }
-
 .hero__view__promo__img--shopping__car {
   width: 81px;
   height: 81px;
-  margin: 0px 0 20px 0; }
+  padding: 40px 10px 10px 45px; }
 
 .hero__view__promo__title--shopping__car {
-  margin: 0 0 0 10px;
+  margin: 55px 0 0 0px;
   font-style: normal;
   font-weight: 800;
   font-size: 19px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
-  font-family: 'Mont-Bold'; }
+  color: #03002b;
+  font-family: "Mont-Bold";
+  text-align: left; }
 
 .hero__view__promo__teacher--shopping__car {
   margin: 0 0 0 10px;
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #4F4F4F; }
+  color: #4f4f4f; }
+
+.hero__view__promo__teacher--shopping__car--details {
+  margin: 0 0 0 0px; }
 
 @media screen and (max-width: 1325px) {
   .shopping-none {
@@ -1148,9 +1158,9 @@
     bottom: 0;
     width: auto; }
   .shopping__car__box__inside__total {
-    font-family: 'Mont-Light'; }
+    font-family: "Mont-Light"; }
   .shopping__car__box__inside__total--price {
-    font-family: 'Mont-Bold';
+    font-family: "Mont-Bold";
     left: 20%; }
   .btn__secundary--buy {
     margin: 30px 0px 24px 0px; }
@@ -1298,7 +1308,7 @@
 
 .about__us__title {
   width: 351px;
-  font-family: 'Mont-Bold', Roboto;
+  font-family: "Mont-Bold", Roboto;
   font-weight: 800;
   font-size: 25px;
   color: #03002b;
@@ -1329,7 +1339,7 @@
   font-style: normal; }
 
 .about__us__box__inside__name {
-  font-family: 'Mont-Bold', Roboto;
+  font-family: "Mont-Bold", Roboto;
   font-size: 19px;
   margin: 0; }
 
@@ -1361,13 +1371,13 @@
   margin: 30px 35px 0 0; }
 
 .about__us__focus__future__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 113.3%;
   letter-spacing: -0.03em;
-  color: #03002B;
+  color: #03002b;
   margin: 50px 0 0 0; }
 
 .about__us__focus__future__text {
@@ -1380,7 +1390,7 @@
   margin: 50px 0 50px 0px; }
 
 .about__us__focus__map {
-  background: linear-gradient(180deg, #CECECE -87.93%, rgba(255, 255, 255, 0) 100%); }
+  background: linear-gradient(180deg, #cecece -87.93%, rgba(255, 255, 255, 0) 100%); }
 
 .about__us__focus__map__inside {
   margin: 0px 0px 10px 200px; }
@@ -1389,22 +1399,22 @@
   margin: 100px 0 31px 0; }
 
 .about__us__focus__map__inside__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 33px;
   line-height: 114.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .about__us__focus__map__inside__number {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 900;
   font-size: 61px;
   line-height: 114.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
+  color: #03002b;
   margin: 0; }
 
 .about__us__focus__map__inside__box {
@@ -1430,13 +1440,13 @@
 .about__us__focus__knowledge__text {
   margin: 0 0px 0px 60px;
   width: 640px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 33px;
   line-height: 114.3%;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .about__us__focus__tweets {
   margin: 50px 200px 50px 200px;
@@ -1447,7 +1457,7 @@
 .about__us__focus__tweets__box {
   width: 311px;
   height: 241px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   box-shadow: 0px 0px 6px rgba(13, 0, 86, 0.2);
   border-radius: 7px;
   padding: 0;
@@ -1463,16 +1473,16 @@
 
 .about__us__focus__tweets__box__inside__time {
   left: 233px;
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 114.3%;
   letter-spacing: -0.02em;
-  color: #4F4F4F; }
+  color: #4f4f4f; }
 
 .about__us__focus__tweets__box__inside__name {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -1482,7 +1492,7 @@
   margin: 0; }
 
 .about__us__focus__tweets__box__inside__nick {
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -1495,19 +1505,19 @@
 
 .about__us__focus__tweets__box__inside__link {
   width: 204px;
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 114.3%;
   letter-spacing: -0.02em;
-  color: #3E92CC;
+  color: #3e92cc;
   margin: 10px 30px 0 0px; }
 
 .about__us__focus__tweets__box__inside hr {
   width: 310px;
   height: 0px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   position: relative;
   left: -30px; }
 
@@ -1528,14 +1538,14 @@
   margin: 80px 200px 150px 100px; }
 
 .about__us__focus__phrase__title {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 25px;
   line-height: 114.3%;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .about__us__focus__phrase__inside {
   position: relative;
@@ -1548,28 +1558,28 @@
   transform: translate(-45%, -10%); }
 
 .about__us__focus__phrase__sub {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-size: 20px;
-  color: #03002B;
+  color: #03002b;
   position: relative;
   text-align: center;
   transform: translate(0%, 0%); }
 
 .about__us__focus__phrase__author {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-size: 16px;
   line-height: 113.3%;
   font-style: normal;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #03002B; }
+  color: #03002b; }
 
 .about__us__focus__map__inside__data__geo__img {
   width: 400px;
   height: 483px; }
 
 .slide {
-  width: 84%;
+  width: 1000px;
   box-sizing: border-box;
   overflow: hidden;
   display: grid;
@@ -1629,7 +1639,7 @@
     bottom: 200px; }
   .about__us__focus__knowledge {
     margin: 0;
-    background: linear-gradient(180deg, #CECECE -87.93%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #cecece -87.93%, rgba(255, 255, 255, 0) 100%);
     position: relative;
     bottom: 100px; }
   .about__us__focus__knowledge img {
@@ -1696,18 +1706,21 @@
 
 .navbar__menu__shopping__cart__notification {
   background: #b38a58;
-  position: relative;
-  left: 37px;
-  bottom: 10px;
+  position: absolute;
+  top: 10px;
+  right: 324px;
   z-index: 3;
   border-radius: 50%;
   height: 15px;
   width: 15px; }
 
+.navbar__menu__shopping__cart__notification--user {
+  right: 348px; }
+
 .navbar__menu__shopping__cart__notification--mobile {
   background: #b38a58;
   position: absolute;
-  right: 97px;
+  right: 82px;
   top: 10px;
   z-index: 3;
   border-radius: 50%;
@@ -1780,7 +1793,21 @@
   padding: 1em 1em; }
 
 .navbar__menu img {
-  z-index: 2; }
+  z-index: 2;
+  position: relative;
+  top: -5px;
+  left: 5px; }
+
+.navbar__hamburguer__shopping__img__desktop--toggle {
+  filter: invert(0.5) sepia(9); }
+
+.navbar__hamburguer__shopping__img {
+  position: absolute;
+  right: 85px;
+  top: 10px; }
+
+.navbar__hamburguer__shopping__img--toggle {
+  filter: invert(0.5) sepia(9); }
 
 .navbar__menu img:hover {
   color: #b38a58;
@@ -1794,6 +1821,12 @@
   transition: all 0.2s ease-in-out; }
 
 /* <-------MEDIA-------> */
+@media screen and (max-width: 1250px) {
+  .navbar__menu__shopping__cart__notification {
+    right: 316px; }
+  .navbar__menu__shopping__cart__notification--user {
+    right: 346px; } }
+
 @media screen and (max-width: 1024px) {
   .navbar__query {
     display: none;
@@ -1847,9 +1880,7 @@
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-right: auto;
-  width: 558px;
-  height: 631px;
-  margin-top: 50px; }
+  width: 558px; }
 
 .login__inside {
   padding: 0px 100px 0px 100px; }
@@ -1894,7 +1925,8 @@
   display: flex;
   align-items: center;
   place-content: center;
-  margin-top: 38px; }
+  margin-top: 38px;
+  margin-bottom: 30px; }
 
 .login__inside__text a {
   text-decoration: none;
@@ -2281,7 +2313,7 @@
 .btn__primary {
   color: #f2f2f2;
   font-size: 16px;
-  font-family: 'Mont-Light', Roboto;
+  font-family: "Mont-Light", Roboto;
   padding: 13px 25px;
   border: 1px solid #f2f2f2;
   cursor: pointer;
@@ -2290,7 +2322,7 @@
 
 .btn__primary--fix {
   margin: 0px 0px 8% 193px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   height: 40px;
   padding: 0px 35px 0px 35px;
   border: 2px solid #f2f2f2; }
@@ -2317,16 +2349,16 @@
   margin: 0 20px 4px 0px;
   position: relative;
   bottom: 5px;
-  font-family: 'Mont-Light', Roboto; }
+  font-family: "Mont-Light", Roboto; }
 
 .btn__secundary--buy {
   width: 199px;
-  font-family: 'Mont-Bold', Roboto;
+  font-family: "Mont-Bold", Roboto;
   height: 38px;
-  background-color: initial;
   color: #b38a58;
+  background-color: initial;
   border: 2.5px solid #b38a58;
-  margin: 0px 10px 24px 0; }
+  margin: 0px 20px 24px 0; }
 
 .btn__secundary--buy--select {
   background-color: #b38a58;
@@ -2374,17 +2406,21 @@
 
 .btn__arrow__black {
   width: 24px;
+  background-size: cover;
   height: 24px;
   background-image: url(img/arrow-right-black.svg);
   position: relative;
-  top: 15px; }
+  top: 15px;
+  margin: 0 5px 0 0; }
 
 .btn__arrow__buy__shopping {
   width: 24px;
   height: 25px;
   background-image: url(img/shopping-car-black.svg);
   position: relative;
-  top: 13px; }
+  top: 13px;
+  left: 5px;
+  margin: 0 10px 0px 0; }
 
 .btn__play__img {
   width: 19px;
@@ -2392,7 +2428,7 @@
   background-image: url(img/icon-play.svg); }
 
 .btn__arrow__buy p {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-size: 15px;
   margin: 17px 0 0 5px; }
 
@@ -2406,7 +2442,7 @@ button {
   cursor: pointer;
   user-select: none;
   padding: 5px 10px 10px 35px;
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -2439,7 +2475,7 @@ button {
   background-color: #ccc; }
 
 .checkbox__container input:checked ~ .checkmark {
-  background-color: #03002B; }
+  background-color: #03002b; }
 
 .checkmark:after {
   content: "";
@@ -2473,7 +2509,8 @@ button {
   fill: #fff;
   background-color: #b38a58;
   color: #ffffff;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  border: 2.5px solid #b38a58; }
 
 .btn__primary--login:hover {
   border: 1px solid #b38a58; }
@@ -2553,7 +2590,7 @@ button {
 
 body {
   margin: 0;
-  font-family: 'Mont-Regular', Roboto; }
+  font-family: "Mont-Regular", Roboto; }
 
 input[type="text"] {
   padding: 0px 0px 0 10px;
@@ -2603,11 +2640,17 @@ textarea:focus {
 .grid-column-3 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: '. . . .';
+  grid-template-areas: ". . . .";
   margin: 0px 0 70px 0px; }
 
 .text-decoration {
   text-decoration: none; }
+
+.text-decoration--navbar {
+  color: #b38a58; }
+
+.text-decoration--navbar:hover {
+  color: #03002bd6; }
 
 .display__screen__mobile__flex {
   display: none; }
@@ -2651,7 +2694,7 @@ textarea:focus {
 
 .visualization__sidebar {
   margin: 25px;
-  height: 485px;
+  height: 525px;
   overflow: overlay; }
 
 .visualization__sidebar::-webkit-scrollbar {
@@ -2712,12 +2755,7 @@ textarea:focus {
   width: 29px; }
 
 .visualization__sidebar__arrow--up {
-  margin: 5px 0 0 0px;
-  position: relative;
-  left: 180px;
-  left: 165px;
-  bottom: 15px;
-  width: 24px; }
+  bottom: 21px; }
 
 .visualization__sidebar__text {
   font-family: "Mont-Regular";
@@ -2886,6 +2924,11 @@ textarea:focus {
   margin: 29px 10px 0 44px;
   width: 130px; }
 
+.hero__view__promo__img--details {
+  width: 81px;
+  height: 81px;
+  margin: 0px 10px 20px 0px; }
+
 .hero__view__promo__traingle {
   position: relative; }
 
@@ -2896,17 +2939,34 @@ textarea:focus {
   color: #03002b;
   text-align: initial; }
 
+.hero__view__promo__title--details {
+  font-family: "Mont-Bold";
+  font-size: 19px;
+  margin: 5px 0px 0 0;
+  color: #03002b;
+  text-align: initial; }
+
 .hero__view__promo__price {
   font-family: "Mont-Bold";
   font-size: 24px;
   color: #b38a58;
+  margin: 5px 20px 0px 0; }
+
+.hero__view__promo__price--shopping__car {
+  width: 120px;
   margin: 10px 20px 0px 0; }
 
 .hero__view__promo__price__before {
   font-style: inherit;
   text-decoration: line-through;
   color: #828282;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  font-family: "Mont-Light"; }
+
+.hero__view__promo__price__before--shopping__car {
+  width: 70px;
+  margin: 15px 0 0 0; }
 
 .hero__view__promo__price__delete {
   font-family: "Mont-Bold";
@@ -2916,7 +2976,20 @@ textarea:focus {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #03002b;
-  margin: 20px 40px 0px 30px; }
+  margin: 15px 55px 0px 30px; }
+
+.hero__view__promo__price__delete--shopping__car--desktop {
+  margin: 20px 55px 0px 30px; }
+
+.hero__view__promo__price__delete--shopping__car {
+  position: absolute;
+  left: 48.5vw;
+  margin: 20px 0 0 0; }
+
+.hero__view__promo__price__delete--shopping__car--mobile {
+  position: relative;
+  left: 0vw;
+  margin: 20px 0 0px 0; }
 
 .hero__view__promo__price__delete:hover {
   color: red;
@@ -2929,14 +3002,15 @@ textarea:focus {
 .hero__view__promo__total h2 {
   font-family: "Mont-Bold";
   font-size: 17px;
+  margin-left: 30px;
   color: #03002b; }
 
 .hero__view__promo__total__ar {
   position: absolute;
-  right: 50px; }
+  right: 80px; }
 
 .hero__view__promo__margin__btn {
-  margin: 0px 0 10px 80px; }
+  margin: 0px 0 24px 70px; }
 
 .btn__secundary--promo {
   margin: 10px 0 0 40px;
@@ -2994,6 +3068,42 @@ textarea:focus {
 .course__plus__progress {
   margin: 10px 0 10px 0; }
 
+.slide-in-top {
+  animation: slide-in-top 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(0);
+    opacity: 0; }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5; }
+  100% {
+    transform: translateY(5px);
+    opacity: 1; } }
+
+.arrow-rotation-up {
+  animation: arrow-rotation-up 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+@keyframes arrow-rotation-up {
+  0% {
+    transform: rotateZ(0deg); }
+  50% {
+    transform: rotateZ(90px); }
+  100% {
+    transform: rotateZ(180deg); } }
+
+.arrow-rotation-down {
+  animation: arrow-rotation-down 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+@keyframes arrow-rotation-down {
+  0% {
+    transform: rotateZ(180deg); }
+  50% {
+    transform: rotateZ(90px); }
+  100% {
+    transform: rotateZ(0deg); } }
+
 @media screen and (max-width: 1300px) {
   .my-course__individual {
     grid-template-areas: ". ."; } }
@@ -3036,23 +3146,23 @@ textarea:focus {
   margin: 50px 0 20px 0; }
 
 .buyed__progress h1 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 29px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
+  color: #03002b;
   margin: 20px 0 0 0; }
 
 .buyed__progress h4 {
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #4F4F4F;
+  color: #4f4f4f;
   margin: 5px 0 60px 0px; }
 
 .buyed__progress__img {
@@ -3074,17 +3184,19 @@ textarea:focus {
   background: #03002b;
   border-radius: 0px 50px 50px 0px; }
 
-.buyed__progress__bar__completed p {
-  color: #F2F2F2;
+.buyed__progress__bar h1 {
+  color: #f2f2f2;
   position: relative;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  left: 210%;
-  top: 1px;
-  z-index: 2; }
+  left: 75%;
+  width: 70px;
+  top: -19px;
+  z-index: 20;
+  margin: 0; }
 
 .btn__secundary--buyed__progress {
   margin: 26px 0 0 0; }
@@ -3101,20 +3213,20 @@ textarea:focus {
 .buyed__bar__text {
   margin: 0 150px 0px 0px;
   font-style: normal;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-weight: 800;
   font-size: 19px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #4F4F4F; }
+  color: #4f4f4f; }
 
 .buyed__bar__text:hover {
-  color: #03002B;
+  color: #03002b;
   transition: all 0.2s ease-in-out;
   cursor: pointer; }
 
 .buyed__bar--select {
-  color: #03002B; }
+  color: #03002b; }
 
 .buyed__text {
   width: 661px;
@@ -3127,7 +3239,7 @@ textarea:focus {
   margin: 28px 0 30px 0px; }
 
 .buyed__font {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-size: 18px;
   font-weight: 500;
   line-height: 1.52;
@@ -3135,7 +3247,7 @@ textarea:focus {
   margin: 0; }
 
 .buyed_see__more {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -3154,7 +3266,7 @@ textarea:focus {
   margin: 30px 0 80px 0px; }
 
 .buyed__teacher__tittle {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -3199,7 +3311,7 @@ textarea:focus {
   margin: 0; }
 
 .buyed__teacher strong {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
@@ -3222,7 +3334,7 @@ textarea:focus {
   margin: 30px 0 30px 0; }
 
 .buyed__course__variant__text h4 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-weight: bold;
   line-height: 1.19;
   letter-spacing: -0.51px; }
@@ -3232,20 +3344,20 @@ textarea:focus {
 
 .buyed__teacher__mobile {
   height: 78px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin: 0 0 20px 0; }
 
 .buyed__teacher__mobile__left {
   width: 42px;
   height: 78px;
-  background: #03002B; }
+  background: #03002b; }
 
 .buyed__teacher__mobile__center {
   margin: 0px 0px 0 10px; }
 
 .buyed__teacher__mobile__center h5 {
   margin: 25px 0px 0 10px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
@@ -3254,7 +3366,7 @@ textarea:focus {
 
 .buyed__teacher__mobile__center p {
   margin: 0px 0px 0 10px;
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -3275,6 +3387,10 @@ textarea:focus {
 .buyed__teacher__mobile__img {
   margin: 28px 0px 0 10px; }
 
+@media screen and (max-width: 1150px) {
+  .buyed {
+    margin: 15px 50px 40px 100px; } }
+
 @media screen and (max-width: 1024px) {
   .buyed {
     margin: 15px 100px 40px 100px; }
@@ -3289,10 +3405,14 @@ textarea:focus {
     height: 140%;
     width: 100vw;
     background: #fff;
-    z-index: 3;
+    z-index: 50;
     position: absolute;
     top: 0;
-    left: 0; } }
+    left: 0; }
+  .buyed__progress__bar h1 {
+    left: 85%; }
+  .buyed__classes__breadcrumbs__mobile {
+    margin: 20px; } }
 
 @media screen and (max-width: 562px) {
   .buyed {
@@ -3500,12 +3620,6 @@ textarea:focus {
   color: #000000;
   width: 304px; }
 
-.way-to-pay__box__card--mercado__pago__text__btn {
-  margin: 45px; }
-
-.way-to-pay__box__card--mercado__pago__text__btn:hover {
-  background-color: #03002b; }
-
 .way-to-pay__box__card--button__paypal {
   margin: 50px 0px 50px 20px; }
 
@@ -3514,6 +3628,58 @@ textarea:focus {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+.way-to-pay__input--check--initial {
+  position: absolute;
+  position: absolute;
+  margin: 5px 0 0px 10px;
+  z-index: 2; }
+
+.way-to-pay__input--check--initial--correct {
+  filter: sepia(181); }
+
+.way-to-pay__input--check {
+  position: relative;
+  top: 5px;
+  right: -10px; }
+
+.way-to-pay__input--error {
+  font-family: "Mont-Light";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 135.3%;
+  letter-spacing: -0.03em;
+  color: #4f4f4f;
+  position: relative;
+  top: -10px; }
+
+.way-to-pay__input--error__profile {
+  font-family: "Mont-Light";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 135.3%;
+  letter-spacing: -0.03em;
+  color: #4f4f4f;
+  position: relative;
+  top: 5px; }
+
+.way-to-pay__input--error--variation {
+  position: absolute;
+  margin: 50px 0 0 0;
+  top: auto; }
+
+.way-to-pay__input--error--variation--segurity {
+  position: absolute;
+  margin: 13px 0px 0 190px;
+  top: auto; }
+
+.way-to-pay__input--check--correct {
+  filter: sepia(181); }
+
+.way-to-pay__input__btn {
+  margin: 50px 0 20px 0; }
 
 .way-to-visa {
   width: 41px;
@@ -3537,6 +3703,12 @@ textarea:focus {
   border: 2.5px solid #03002b;
   color: #ffffff;
   transition: all 0.2s ease-in-out; }
+
+.way-to-pay__box__card--mercado__pago__text__btn {
+  margin: 45px; }
+
+.way-to-pay__box__card--mercado__pago__text__btn:hover {
+  background-color: #03002b; }
 
 .details {
   width: 468px;
@@ -3568,7 +3740,7 @@ textarea:focus {
 
 .details__inside__title__edit__link:hover {
   color: #b38a58;
-  font-family: 'Mont-Bold'; }
+  font-family: "Mont-Bold"; }
 
 .details__inside__title__edit__link img {
   margin: 0px 10px 0 10px; }
@@ -3782,7 +3954,13 @@ textarea:focus {
   .way-to-pay__box {
     border: none; }
   .details {
+    position: relative;
+    top: -80px;
     width: 100vw; }
+  .way-to-pay__input--email {
+    width: 60vw; }
+  .way-to-pay__tex__email {
+    margin: 10px 0 -20px 0; }
   .way-to-pay__box {
     padding: 15px 0 0 10%; }
   .way-to-pay__box {
@@ -3809,7 +3987,9 @@ textarea:focus {
   .congratulation__box__inside {
     padding: 50px 0 0 25%; }
   .way-to-pay__input__box {
-    margin: 20px 0 0 30px; } }
+    margin: 20px 0 0 30px; }
+  .details__inside {
+    margin: 30px 30px -70px 43px; } }
 
 @media screen and (max-width: 445px) {
   .way-to-pay__box {
@@ -3843,23 +4023,30 @@ textarea:focus {
     margin: 20px 0 0 20px; }
   .details__inside__edit {
     position: absolute;
-    right: -30px; } }
+    right: -30px; }
+  .way-to-pay__text {
+    margin: -10px 0 10px 23px; }
+  .way-to-pay__input--email {
+    margin: 3px 0px 31px 20px; }
+  .way-to-pay__input--card {
+    width: 61vw;
+    margin: 0px 0 16px 0px; } }
 .data {
   margin: 42px 200px 50px 200px;
   height: 680px; }
 
 .data h4 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 23px;
   line-height: 135.3%;
   letter-spacing: -0.03em;
-  color: #03002B;
+  color: #03002b;
   margin: 0; }
 
 .data h5 {
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-style: normal;
   font-size: 15px;
   line-height: 135.3%;
@@ -3870,23 +4057,29 @@ textarea:focus {
 .data__input__text {
   width: 448px;
   height: 37px;
-  background: #FFFFFF;
-  border: 1px solid #BDBDBD;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
   box-sizing: border-box;
-  margin: 11px 0 0px 0px; }
+  margin: 11px 0 0px 0px;
+  display: block; }
+
+.data__input__text__check {
+  position: relative;
+  top: 5px;
+  left: 10px; }
 
 .btn__secundary--data {
   width: 122px;
   margin: 40px 0 0 0; }
 
 .data h1 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 135.3%;
   letter-spacing: -0.03em;
-  color: #03002B;
+  color: #03002b;
   margin: 59px 0 20px 0; }
 
 .data__text {
@@ -3916,7 +4109,7 @@ textarea:focus {
   margin: 0 0px 0px 40px; }
 
 .data__right p {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-size: 14px;
   margin: 0 0 30px 0; }
 
@@ -3929,7 +4122,7 @@ textarea:focus {
   height: 37px;
   left: 687px;
   top: 568px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
@@ -3957,7 +4150,7 @@ textarea:focus {
   width: 321px;
   height: 37px;
   bottom: 5px;
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-size: 12px; }
 
 .politicy__inside__right {
@@ -3966,22 +4159,22 @@ textarea:focus {
 .politicy__inside__right h2 {
   left: 588px;
   top: 143px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 135.3%;
   letter-spacing: -0.03em;
-  color: #03002B;
+  color: #03002b;
   margin: 25px 0 20px 0; }
 
 .politicy__inside__right h5 {
   font-size: 14px;
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   color: black; }
 
 .politicy__inside__right__title--help__center {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -3991,15 +4184,15 @@ textarea:focus {
   margin: 50px 0 0 0; }
 
 .politicy__inside__right__title--help__center__link {
-  color: #B38A58; }
+  color: #b38a58; }
 
 .politicy__inside__right__text {
   font-size: 15px;
-  font-family: 'Judson';
+  font-family: "Judson";
   margin: 0 0 30px 0; }
 
 .politicy__inside__right__text--help__center {
-  font-family: 'Mont-Regular';
+  font-family: "Mont-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -4079,7 +4272,7 @@ textarea:focus {
   margin: 30px 0px 0 0; }
 
 .contact__check__message p {
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
