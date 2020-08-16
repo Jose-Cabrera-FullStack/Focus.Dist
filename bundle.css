@@ -31,7 +31,8 @@
   color: #e0e0e0;
   font-weight: 300;
   line-height: 118.3%;
-  margin: 0; }
+  margin: 0;
+  font-family: "Mont-Light"; }
 
 .display__screen__mobile {
   display: none; }
@@ -83,13 +84,21 @@
     margin: 20px 0px 8% 13%; }
   .home__view h1 {
     font-size: 20px;
-    padding: 0px 0 0 23%; }
+    padding: 0px 0 0 43px; }
   .home__view h3 {
     font-size: 16px;
-    padding: 0px 0 0 23%; }
+    padding: 0px 0 0 43px; }
   .home__view__figure {
     margin: 0;
     padding: 2% 0 0 10%; } }
+
+@media screen and (max-width: 550px) {
+  .home__view__img {
+    width: 219px;
+    height: 219px;
+    margin: 70px 0px 8% 13%; }
+  .home__view {
+    background-position: -130px; } }
 
 /* <-------MEDIA-------> */
 .course {
@@ -646,6 +655,15 @@
 @media screen and (max-width: 1024px) {
   .course {
     margin: 40px 0px 0px 10%; }
+  .course__hidden__information {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 135.3%;
+    letter-spacing: -0.03em;
+    color: #4f4f4f;
+    cursor: context-menu;
+    user-select: none; }
   .course__img__video {
     width: 414px; }
   .course__recomendation__inside {
@@ -674,7 +692,7 @@
     width: 80vw;
     border-bottom: 1px solid; }
   .course__module {
-    margin: 100px 0 0 10%; }
+    margin: 0; }
   .course__for__me {
     margin: 52px 0 0 10%; }
   .course__recomendation__inside__name {
@@ -737,7 +755,9 @@
     width: auto;
     height: auto; }
   .course__module__element__inside--help__center {
-    width: auto; } }
+    width: auto; }
+  .discovery__box__info__inside {
+    margin: -20px 0 0 0; } }
 
 @media screen and (max-width: 450px) {
   .course__module__arrow--buyed {
@@ -810,7 +830,7 @@
   margin: -4px 0 0 0; }
 
 .discovery__box__info__padding {
-  padding: 10px 30px 0px 21px; }
+  padding: 10px 0px 0px 21px; }
 
 .discovery__box__info__title {
   font-style: normal;
@@ -821,6 +841,24 @@
   letter-spacing: -0.02em;
   color: #03002b;
   margin: 0; }
+
+.pagination {
+  list-style: none;
+  place-content: center;
+  margin: 40px 0 0 0; }
+
+.pagination p {
+  padding: 0 40px 0 40px;
+  position: relative;
+  bottom: 15px; }
+
+.pagination img {
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+  user-select: none; }
+
+.pagination img:hover {
+  filter: sepia(9); }
 
 .discovery__box__info__name {
   margin: 0 15px 0 0px;
@@ -856,7 +894,13 @@
   margin: 5px 0 0 0; }
 
 .discovery__box__info__student {
-  margin: 0px 0px 0px 5px; }
+  margin: 2px 0px 0px 5px;
+  font-size: 12px; }
+
+.discovery__box__info__hours__icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px; }
 
 .discovery__box__info__price__before {
   margin: 13px 0px 0px 10px;
@@ -1244,7 +1288,7 @@
 .how__we__tech__title {
   font-style: normal;
   font-weight: 800;
-  font-family: 'Mont-Bold', Roboto;
+  font-family: "Mont-Bold", Roboto;
   font-size: 25px;
   color: #03002b;
   margin: 110px 0 60px 0px; }
@@ -1255,8 +1299,23 @@
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px; }
 
-.how__we__tech__info {
-  margin: 0px 0 0 0px; }
+.how__we__tech__container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease; }
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px); }
+
+@keyframes how__we__tech__info {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0.7; }
+  100% {
+    opacity: 1;
+    transform: translateX(30px); } }
 
 .how__we__tech__info__img {
   width: 188px; }
@@ -1266,7 +1325,7 @@
   margin: -10px; }
 
 .how__we__tech__info__title {
-  font-family: 'Mont-Bold', Roboto;
+  font-family: "Mont-Bold", Roboto;
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
@@ -1274,7 +1333,7 @@
   margin: 0; }
 
 .how__we__tech__info__text {
-  font-family: 'Mont-Light';
+  font-family: "Mont-Light";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -1304,7 +1363,7 @@
 /* <-------MEDIA-------> */
 /* <-------ABOUT US-------> */
 .about__us {
-  margin: 100px 200px 0 193px; }
+  margin: 100px 130px 0 193px; }
 
 .about__us__title {
   width: 351px;
@@ -1587,7 +1646,7 @@
   grid-template-areas: ". . . . . . . . . . . . ."; }
 
 .slide--course {
-  width: 98%; }
+  width: 1070px; }
 
 /* <-------ANIMATION-------> */
 .about__us__arrow:hover {
@@ -1597,6 +1656,12 @@
 
 /* <-------ANIMATION-------> */
 /* <-------MEDIA-------> */
+@media screen and (max-width: 1350px) {
+  .slide {
+    width: 665px; }
+  .slide--course {
+    width: 710px; } }
+
 @media screen and (max-width: 1325px) {
   .none {
     display: none; } }
@@ -1880,7 +1945,8 @@
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
   margin-left: auto;
   margin-right: auto;
-  width: 558px; }
+  width: 558px;
+  transform: translateY(2%); }
 
 .login__inside {
   padding: 0px 100px 0px 100px; }
@@ -2525,7 +2591,7 @@ button {
 /* <-------MEDIA-------> */
 @media screen and (max-width: 1024px) {
   .btn__primary--media {
-    margin: 20px 0px 8% 23%; }
+    margin: 20px 0px 8% 43px; }
   .btn__secundary--about__us {
     width: 150px;
     position: relative;
@@ -3034,7 +3100,9 @@ textarea:focus {
 
 .my-course__menu--select {
   font-family: Mont-Bold;
-  color: #b38a58; }
+  color: #b38a58;
+  height: 25px;
+  border-bottom: 3px solid #b38a58; }
 
 .my-course__menu:hover {
   font-family: Mont-Bold;
@@ -3171,7 +3239,7 @@ textarea:focus {
   margin: 0px 0 0 14vw; }
 
 .buyed__progress__bar {
-  width: 100%;
+  width: 90%;
   height: 20px;
   background: #b3b3bf;
   border-radius: 0px 50px 50px 0px; }
@@ -3192,7 +3260,7 @@ textarea:focus {
   font-size: 16px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  left: 75%;
+  left: 80%;
   width: 70px;
   top: -19px;
   z-index: 20;
@@ -3218,15 +3286,17 @@ textarea:focus {
   font-size: 19px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #4f4f4f; }
+  color: #4f4f4f;
+  cursor: pointer;
+  user-select: none; }
 
 .buyed__bar__text:hover {
-  color: #03002b;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer; }
+  color: #b38a58;
+  transition: all 0.2s ease-in-out; }
 
 .buyed__bar--select {
-  color: #03002b; }
+  color: #b38a58;
+  cursor: context-menu; }
 
 .buyed__text {
   width: 661px;
