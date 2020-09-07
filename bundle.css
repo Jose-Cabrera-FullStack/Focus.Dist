@@ -2164,18 +2164,24 @@
   .login__inside__title {
     margin-top: 0px; }
   .login__inside__go__back__button h1 {
-    font-family: 'Mont-Light';
+    font-family: "Mont-Light";
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 135.3%;
     letter-spacing: -0.02em;
-    color: #4F4F4F;
+    color: #4f4f4f;
     margin: 30px 0px 27px 10px; }
   .congratulation__exit--login {
     display: none; }
   .login__inside__go__back__button {
-    display: block; } }
+    display: block; }
+  .facebook__button--register {
+    width: 300px;
+    margin: 10px 0px 10px 0px; }
+  .google__button--register {
+    width: 300px;
+    margin: 10px 0px 40px 0px; } }
 /* <-------FOOTER-------> */
 .footer {
   height: 377px;
@@ -2979,6 +2985,19 @@ textarea:focus {
   letter-spacing: -0.02em;
   color: #f2f2f2; }
 
+.visualization__navbar--visualization h5 {
+  margin: 20px 169px 0 10px; }
+
+.visualization__title {
+  font-family: "Mont-Regular";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #f2f2f2;
+  margin: auto 0 auto 0; }
+
 .visualization__grid {
   display: grid;
   grid-template-columns: 415px 1fr;
@@ -3182,7 +3201,21 @@ textarea:focus {
   .visualization__sidebar__list {
     width: 85vw; }
   .visualization__sidebar__inside {
-    width: auto; } }
+    width: 85vw; }
+  .visualization__navbar--visualization h5 {
+    width: 135px;
+    margin: 20px 9px 0 10px; }
+  .visualization__navbar {
+    border-bottom: none;
+    padding: 5px 0 20px 0px; }
+  .visualization__title {
+    margin: 10px 30px 10px 30px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #f2f2f2; } }
 
 @media screen and (max-width: 445px) {
   .visualization__navbar {
@@ -3222,6 +3255,9 @@ textarea:focus {
 .hero__view__promo__empty {
   color: black;
   margin: 20px; }
+
+.hero__view__promo__empty__text {
+  margin: 0; }
 
 .hero__view__promo__margin {
   margin: -20px 0 0 0; }
@@ -3618,6 +3654,9 @@ textarea:focus {
   letter-spacing: -0.48px;
   margin: 0; }
 
+.buyed_see__more__box {
+  margin: 0; }
+
 .buyed_see__more {
   font-family: "Mont-Bold";
   font-size: 17px;
@@ -3805,7 +3844,7 @@ textarea:focus {
     right: 40px;
     margin: 30px 0 0 0; } }
 .register {
-  background-image: linear-gradient(to bottom, #03002B, #03002b80), url(img/log-in.png);
+  background-image: linear-gradient(to bottom, #03002b, #03002b80), url(img/log-in.png);
   background-size: cover;
   margin: 0;
   height: 100vh; }
@@ -3819,7 +3858,7 @@ textarea:focus {
 
 .register__box {
   width: 520px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
   position: relative;
   float: left;
@@ -3831,45 +3870,46 @@ textarea:focus {
   margin: 25px 75px 50px 75px; }
 
 .register__box__inside__img {
-  margin: 10px 0 0 90px; }
+  margin: 10px 30px 20px 50px;
+  width: 134px;
+  height: 111px; }
 
 .register__box__inside h1 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 31px;
   line-height: 135.3%;
-  text-align: center;
+  text-align: initial;
   letter-spacing: -0.02em;
-  color: #03002B;
+  color: #b38a58;
   margin: 20px 0 0 0; }
 
 .register__box__inside h2 {
-  font-family: 'Mont-Bold';
+  font-family: "Mont-Bold";
   font-style: normal;
+  margin: 10px 0 20px 0px;
   font-weight: 800;
-  font-size: 25px;
-  line-height: 135.3%;
-  text-align: center;
+  font-size: 18px;
+  line-height: 105.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
-  margin: 10px 0 20px 0px; }
+  color: #03002b; }
 
 .register__box__inside h5 {
-  font-family: 'Mont-Semi-Bold';
+  font-family: "Mont-Semi-Bold";
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
   line-height: 135.3%;
   letter-spacing: -0.02em;
-  color: #03002B;
+  color: #03002b;
   margin: 16px 0px 10px 0px; }
 
 .register__box__inside input {
   width: 365px;
   height: 37px;
-  background: #FFFFFF;
-  border: 1px solid #BDBDBD;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
   box-sizing: border-box; }
 
 .register__box__inside--error {
@@ -3887,29 +3927,36 @@ textarea:focus {
   width: 169px;
   margin: 30px 0 0 100px; }
 
+.register__box__inside__link {
+  margin: 50px; }
+
 @media screen and (max-width: 686px) {
   .register__box {
     top: 30%;
     left: 79%; }
   .register__box {
-    transform: translate(-80%, -30%); } }
+    transform: translate(-85%, -30%); } }
 
 @media screen and (max-width: 518px) {
   .register__box__inside {
-    margin: 25px 35px 50px 45px; }
+    margin: 25px 25px 50px 25px; }
   .register__box {
     width: 360px; }
   .register__box__inside__img {
-    margin: 0 0 0 30px; }
+    margin: 0 20px 0 0px;
+    width: 134px;
+    height: 111px; }
   .register__box__inside input {
-    width: 255px; }
+    width: 300px; }
   .register__box__inside h1 {
     font-size: 23px; }
   .register__box__inside h2 {
     font-size: 18px; }
   .btn__secundary--register {
     width: 169px;
-    margin: 30px 0 0 50px; } }
+    margin: 30px 0 0 70px; }
+  .register__box__inside__link {
+    margin: 40px 0px 10px 10px; } }
 .payment {
   display: grid;
   grid-template-columns: 1fr 1fr;
